@@ -7,3 +7,7 @@ $ sudo apt-get install python-rpi.gpio
 $ sudo cp motion-detector.conf /etc/init/
 $ sudo start motion-detector
 ```
+
+```
+$ sudo -E ./motion_detector.py
+```
