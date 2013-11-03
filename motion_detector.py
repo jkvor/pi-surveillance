@@ -14,7 +14,7 @@ s3_bucket_name = os.environ['S3_IMAGE_UPLOADER_BUCKET_NAME']
 
 def snap_photo():
     print("PIR ALARM: " + time.strftime("%a, %d %b %Y %H:%M:%S +0000", time.gmtime()))
-    cmd = "raspistill -w 518 -h 384 -q 5 -t 1000 -n -o -"
+    cmd = "raspistill -w 828 -h 614 -q 20 -t 1000 -n -o -"
     proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, shell=True)
     (out, err) = proc.communicate()
     print "uploading image of size " + str(len(out))
