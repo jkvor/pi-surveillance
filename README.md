@@ -30,21 +30,24 @@ Add the following config vars to `~/.profile`:
 export AWS_ACCESS_KEY_ID=
 export AWS_SECRET_ACCESS_KEY=
 export S3_IMAGE_UPLOADER_BUCKET_NAME=
+export PI_SURVEILLANCE_DIR=$HOME/dev/pi-surveillance
 ```
 
-Clone repository and test:
+Clone repository and manually start daemon in foreground:
 
 ```
-$ git clone git@github.com:JacobVorreuter/pi-surveillance.git
-$ cd pi-surrveillance
+$ source ~/.profile
+$ git clone git@github.com:JacobVorreuter/pi-surveillance.git $PI_SURVEILLANCE_DIR
+$ cd $PI_SURVEILLANCE_DIR
 $ sudo -E ./motion_detector.py
 ```
 
-Install upstart config and start daemon:
+Install upstart config and daemon:
 
 ```
 $ sudo cp motion-detector.conf /etc/init/
 $ sudo start motion-detector
+$ tail -f /tmp/motion-detector.log
 ```
 
 ## Web client
