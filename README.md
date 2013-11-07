@@ -2,17 +2,7 @@
 
 A simple motion-based Raspberry Pi surveillance system.
 
-## Hardware
-
-* [Raspberry Pi](http://www.amazon.com/gp/product/B009SQQF9C)
-* [Breadboard](http://www.amazon.com/gp/product/B004RXKWDQ)
-* [Breakout kit](http://www.amazon.com/gp/product/B00EBXP3R2)
-* [PIR sensor](http://www.amazon.com/gp/product/B007XQRKD4)
-* [Camera board](http://www.amazon.com/gp/product/B00E1GGE40)
-
-Breadboard configuration:
-
-![](http://learn.adafruit.com/system/assets/assets/000/003/929/original/breadboard.png)
+Read more about how the system works in [this blog post](http://www.jkvor.com/blog/2013/11/06/raspberry-pi-surveillance/).
 
 ## Raspberry Pi configuration
 
