@@ -20,6 +20,7 @@ Add the following config vars to `~/.profile`:
 export AWS_ACCESS_KEY_ID=
 export AWS_SECRET_ACCESS_KEY=
 export S3_IMAGE_UPLOADER_BUCKET_NAME=
+export S3_IMAGE_WIDTH=
 export PI_SURVEILLANCE_DIR=$HOME/dev/pi-surveillance
 ```
 
